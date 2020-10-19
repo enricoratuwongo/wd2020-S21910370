@@ -1,0 +1,31 @@
+/* Relative unit mungkin akan sedikit lebih sulit dibandingkan absolute unit untuk menentukan satuan mana yang akan dipakai.
+%: Ukurannya relatif terhadap parent element
+em: Ukurannya relatif terhadap font-size dari elemen saat ini
+rem: Ukurannya relatif terhadap font-size root elemen (<html>). "rem" = "root em"
+ch: Ukurannya mengikuti jumlah karakter (1 karakter sama dengan lebar dari karakter 0/nol font yang sedang aktif)
+vh: Ukurannya relatif terhadap tinggi viewport (ukuran jendela tau aplikasi), 1vh = 1/100 dari tinggi viewport  
+vw: Ukurannya relatif terhadap lebar dari viewport. 1vw = 1/100 lebar viewport
+vmin: Ukurannya relatif terhadap ukuran viewport yang lebih kecil (misalnya diorientasi portrait, lebar akan lebih kecil daripada tinggi). 1vmin = 1/100 dari ukuran viewport yang lebih kecil.
+vmax: Sama dengan vmin, dia akan melihat ukuran viewport yang lebih besar
+ex: Ukurannya relatif terhadap tinggi dari karakter "x" kecil font yang sedang aktif. */
+
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    width: 95vw;
+    height: 100vh;
+}
+
+h1  {
+    font-family: "Give Your Glory", cursive;
+    font-size: 5.625em;
+    width: 75%;
+    margin: 0 auto;
+    width: 100vmin;
+    line-height: 2ex;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+}
